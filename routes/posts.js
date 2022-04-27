@@ -6,7 +6,6 @@ const errorHandle = require('../errorHandle');
 
 router.get('/', async function (req, res, next) {
   const posts = await Post.find();
-  // res.send('respond with a resource');
   res.send({
     "status": "成功取得所有資料",
     posts
